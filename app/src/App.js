@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from './Components/Navbar'
 import logo from './logo.svg'
 import './App.css'
 import {
@@ -13,7 +12,6 @@ function App () {
   return (
     <Router>
       <div className='App'>
-        <Navbar />
         <ul>
           <li>
             <Link to='/'>home</Link>
