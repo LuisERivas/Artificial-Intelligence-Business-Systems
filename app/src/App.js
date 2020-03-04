@@ -1,12 +1,12 @@
 import React from 'react'
-import logo from './logo.svg'
 import './App.css'
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
+  // Switch,
+  // Route,
   Link
 } from 'react-router-dom'
+import NavBar from './Components/NavBar'
 
 function App () {
   return (
@@ -33,6 +33,7 @@ function App () {
           </li>
         </ul>
       </div>
+      <NavBar />
     </Router>
   )
 }
