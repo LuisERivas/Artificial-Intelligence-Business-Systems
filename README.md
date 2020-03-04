@@ -2,6 +2,9 @@
 
 The files and code in this branch cover all things back-end for modeling an optometrist's business operations. Mongo is used to handle databasing and data is extracted into Python for analytical purposes using PyMongo.
 
+ENTITY RELATIONSHIP DIAGRAM LINK:
+https://app.quickdatabasediagrams.com/#/d/yWZzH7
+
 ### File Directory
 
 * PyMongo Dataset.ipynb - Code for accessing Mongo database and reading data using PyMongo
