@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import '../NavBar/navBar.css'
 import TitleHolder from '../TitleHolder/titleHolder'
+import Button from '../Button/button'
 
 class NavBar extends Component {
   render () {
@@ -13,14 +14,15 @@ class NavBar extends Component {
           <div className='col' />
           <div className='col' />
           <div className='col' />
-          <div className='col-2 bg-danger'>
+          <div className='col-2'>
 
             <TitleHolder />
 
           </div>
           <div className='col' />
           <div className='col' />
-          <div className='col-2 text-center bg-danger'> button here
+          <div className='col-2'>
+            <Button />
           </div>
           <div className='col' />
         </div>
