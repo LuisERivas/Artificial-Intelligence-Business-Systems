@@ -7,6 +7,7 @@ import {
   Link
 } from 'react-router-dom'
 import NavBar from './Components/NavBar'
+import SideBar from './Components/SideBar/sideBar'
 
 function App () {
   return (
@@ -34,6 +35,7 @@ function App () {
         </ul>
       </div>
       <NavBar />
+      <SideBar />
     </Router>
   )
 }
