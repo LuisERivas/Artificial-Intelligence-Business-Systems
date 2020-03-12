@@ -5,6 +5,10 @@ import Button from '../Button/button'
 
 class NavBar extends Component {
   render () {
+    var navBarLinks = {
+      linkName1: 'Dasboard',
+      link1: '/'
+    }
     return (
       <div className='navBar'>
         <div className='row h-100'>
@@ -22,7 +26,7 @@ class NavBar extends Component {
           <div className='col' />
           <div className='col' />
           <div className='col-2'>
-            <Button />
+            <Button navBarLinks={navBarLinks} linkSetIndicator={'navBarSet'} />
           </div>
           <div className='col' />
         </div>
