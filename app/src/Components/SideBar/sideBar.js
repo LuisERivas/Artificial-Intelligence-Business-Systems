@@ -11,7 +11,6 @@ class SideBar extends Component {
   }
 
   onCreatePatientClickedTesting () {
-    console.log('im testing if the create patient button has be pressed')
     this.props.createPatientClicked()
   }
   render () {
@@ -24,7 +23,7 @@ class SideBar extends Component {
       link3: '/PatientList'
     }
     return (
-      <div className='float-left bg-danger'>
+      <div className='float-left bg-dark'>
         <div className=''>
           <h1 className='h-100'>
             Side Bar

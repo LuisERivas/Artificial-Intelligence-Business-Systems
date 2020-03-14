@@ -15,22 +15,11 @@ class Button extends Component {
     }
   }
   render () {
-    // console.log(this.props.sideBarLinks)
-    // console.log(this.state.linkSet)
     var buttonSet = this.state.linkSet
-    // console.log('The current Button set is: ' + buttonSet)
     let buttons
     if (buttonSet === 'SideBarSet') {
-      // console.log('--------- Button --------')
-
-      // console.log('I Successfully pulled up the SideBarSet')
-      // console.log('--------- Button --------')
-
       buttons = <div className='bg-primary col'>
         <div className='bg-primary row'>
-          {/* <Router>
-            <Link to={this.props.sideBarLinks.link1} className='text-light btn btn-danger'>{this.props.sideBarLinks.linkName1}</Link>
-          </Router> */}
           <button onClick={this.props.clickTestPatientPage} className='btn btn-dark'>{this.props.sideBarLinks.linkName1}</button>
         </div>
         <div className='bg-primary row'>
@@ -45,21 +34,14 @@ class Button extends Component {
         </div>
       </div>
     } else if (buttonSet === 'navBarSet') {
-      // console.log('--------- Button --------')
-
-      // console.log('I pulled up the NavbarSet')
-      // console.log('--------- Button --------')
-
       buttons = <div className='bg-primary row'>
-        {/* <Router>
-          <Link to={this.props.navBarLinks.link1} className='text-light btn btn-danger'>{this.props.navBarLinks.linkName1}</Link>
-        </Router> */}
+
         <button onClick={this.props.clickTestDashboard} className='btn btn-danger'>{this.props.navBarLinks.linkName1}</button>
       </div>
     } else {
-      // console.log('--------- Button --------')
-      // console.log('there is an eror bro')
-      // console.log('--------- Button --------')
+      console.log('--------- Button --------')
+      console.log('there is an eror bro')
+      console.log('--------- Button --------')
     }
 
     return (

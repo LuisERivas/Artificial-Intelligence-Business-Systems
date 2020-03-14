@@ -12,16 +12,9 @@ class Dashboard extends Component {
       pageState: props.pageStateInitial,
       status: 0
     }
-    // this.onTest = this.onTest.bind(this)
     this.onDashboardClicked = this.onDashboardClicked.bind(this)
     this.onCreatePatientClicked = this.onCreatePatientClicked.bind(this)
   }
-  // onTest () {
-  //   console.log('BRO IT FUCKING WORKED')
-  //   this.setState(state => ({
-  //     pageState: 'ugly boi'
-  //   }))
-  // }
   onDashboardClicked () {
     console.log('BRO IT FUCKING WORKED')
     this.setState(state => ({
@@ -29,21 +22,16 @@ class Dashboard extends Component {
     }))
   }
   onCreatePatientClicked () {
-    console.log('bro, we found the create patient page')
+    // console.log('bro, we found the create patient page')
     this.setState(state => ({
       pageState: 'Create Patient'
     }))
   }
-  //   superTest () {
-  //     console.log('this is a risk but lets see')
-  //   }
+
   render () {
-    // console.log('--------- DashBoard --------')
-    // console.log('Current Page State: ' + this.state.pageState)
     var pageSetter = this.state.pageState
-    // console.log('testing pageSetter var: ' + pageSetter)
+
     let currentPage
-    // console.log('--------- DashBoard --------')
 
     if (pageSetter === 'Dashboard') {
       currentPage = <HomePage />
@@ -57,17 +45,14 @@ class Dashboard extends Component {
     return (
       <div className='bg-dark text-light'>
         <NavBar
-          // test={this.onTest}
           supertesto={this.superTest}
           page={this.state.pageState}
           dashboardClicked={this.onDashboardClicked}
-          // createPatientClicked={this.onCreatePatientClicked}
         />
         <SideBar
           createPatientClicked={this.onCreatePatientClicked}
         />
         {currentPage}
-        <button className='btn btn-danger'>change page here</button>
       </div>
     )
   }
