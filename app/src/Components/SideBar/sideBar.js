@@ -4,6 +4,16 @@ import Button from '../Button/button.js'
 // import ButtonTest from '../ButtonTest/buttonTest'
 
 class SideBar extends Component {
+  constructor (props) {
+    super()
+
+    this.onCreatePatientClickedTesting = this.onCreatePatientClickedTesting.bind(this)
+  }
+
+  onCreatePatientClickedTesting () {
+    console.log('im testing if the create patient button has be pressed')
+    this.props.createPatientClicked()
+  }
   render () {
     var sideBarLinks = {
       linkName1: 'Create Patient',
@@ -20,7 +30,11 @@ class SideBar extends Component {
             Side Bar
           </h1>
 
-          <Button sideBarLinks={sideBarLinks} linkSetIndicator={'SideBarSet'} />
+          <Button
+            sideBarLinks={sideBarLinks}
+            linkSetIndicator={'SideBarSet'}
+            clickTestPatientPage={this.onCreatePatientClickedTesting}
+          />
           {/* <ButtonTest /> */}
         </div>
       </div>
