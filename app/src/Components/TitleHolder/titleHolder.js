@@ -4,11 +4,11 @@ import '../TitleHolder/titleHolder.css'
 
 class TitleHolder extends Component {
   render () {
-    console.log('--------- Title Holder --------')
+    // console.log('--------- Title Holder --------')
 
-    console.log('Testing push prop down from navbar: ' + this.props.currentTitle)
+    // console.log('Testing push prop down from navbar: ' + this.props.currentTitle)
 
-    console.log('--------- Title Holder --------')
+    // console.log('--------- Title Holder --------')
 
     var title
     title = this.props.currentTitle
