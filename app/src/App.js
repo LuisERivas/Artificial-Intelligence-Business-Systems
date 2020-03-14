@@ -1,19 +1,19 @@
 import React from 'react'
 import './App.css'
-import {
-  BrowserRouter as Router,
-  // Switch,
-  // Route,
-  Link
-} from 'react-router-dom'
-import NavBar from './Components/NavBar'
-import SideBar from './Components/SideBar/sideBar'
-
+// import {
+//   BrowserRouter as Router,
+//   // Switch,
+//   // Route,
+//   // Link
+// } from 'react-router-dom'
+// import NavBar from './Components/NavBar'
+// import SideBar from './Components/SideBar/sideBar'
+import Dashboard from './Components/Dashboard/dashboard'
 function App () {
   return (
-    <Router>
-      <div className='App'>
-        <ul>
+    // <Router>
+    <div className='App'>
+      {/* <ul>
           <li>
             <Link to='/'>home</Link>
           </li>
@@ -32,11 +32,11 @@ function App () {
           <li>
             <Link to='/PatientPage'>PatientPage </Link>
           </li>
-        </ul>
-      </div>
-      <NavBar />
-      <SideBar />
-    </Router>
+        </ul> */}
+      <Dashboard pageStateInitial='Dashboard' />
+    </div>
+
+  // </Router>
   )
 }
 
